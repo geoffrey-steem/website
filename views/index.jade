@@ -1,0 +1,30 @@
+
+extends layout
+
+block content
+  #mainbody
+    h1
+      a(href="http://steemit.com/@geoffrey") @geoffrey's
+      |  Steem Seed Node
+        
+    #wrapper
+      br
+      br
+      h3 Welcome!
+
+      h2 Usage:
+      p 
+      hspace 
+        code &nbsp; steemd --seed-node seed.zapto.org:2001
+      
+      p Seed status, and list of other seeds (provided by 
+        a(href="https://steemit.com/@wackou") @wackou
+        | ): 
+        a(href="https://status.steemnodes.com/") status.steemnodes.com
+      
+      br
+      br
+      h2 Steem Apps:
+      ul
+        li 
+          a(href="/steemit-estimator") Steemit-Estimator
