@@ -15,4 +15,11 @@ router.get('/steemit-estimator', function(req, res, next) {
     res.end();
 });
 
+/* Get account. */
+router.get('/:name', function(req, res, next) {
+    res.redirect('http://seed.zapto.org:5000/' + req.params.name);
+    res.end();
+
+});
+
 module.exports = router;
